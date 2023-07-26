@@ -19,7 +19,6 @@
     .attribution a {
         color: hsl(228, 29%, 52%);
         text-decoration: none;
-
         }
 
     .cards{
@@ -31,7 +30,6 @@
     }
 
     .card-description{
-        
         flex-basis: 500px;
     }
 
@@ -43,13 +41,13 @@
         width: 500px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        
-        
     }
+
     .image-container{
         position: relative;
         box-sizing: border-box;
     }
+
     .color-overlay {
         position: absolute;
         box-sizing: border-box;
@@ -76,26 +74,12 @@
     .card-title{
         margin: 70px 70px 30px;
     }
-/* 
-    .card-text{
-       margin-top: 10px;
-        opacity: 40%;
-        padding-right: 10px;
-        font-size: 10px;
-        
-        line-height: 1.4;
-
-    } */
-
 
     .card-text{
         margin: 16px 70px 10px;
          opacity: 40%;
-        
          font-size: 16px;
-         
          line-height: 1.4;
- 
      }
 
     .card-statistic{
@@ -106,7 +90,6 @@
         padding: 10px;
         text-transform: uppercase;
     }
-
 
     .stat-number{
         font-size:25px;
@@ -121,9 +104,11 @@
     }
 
     @media screen and (max-width:960px) {
+
         body{
             background-color:  hsl(233, 47%, 7%);
         }
+
         .cards{
             display: flex;
             flex-direction: column;
@@ -134,96 +119,80 @@
             background-color:  hsl(233, 47%, 7%);
         }
 
-    .card-description{
-        /* display: flex; */
-        width: 330px;
-        height: 600px;
-        order: 2;
-        margin-bottom: 90px;
-        
-        border-top-left-radius: 0;
-        border-bottom-right-radius: 10px;
-    }
-    .card-title{
-        margin: 40px 60px 10px 40px;
-        text-align: center;
-        font-size: 24px;
-    }
-    .card-text{
-        
-        
-        text-align: center;
+        .card-description{
+            width: 330px;
+            height: 600px;
+            order: 2;
+            margin-bottom: 60px;
+            
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 10px;
+        }
 
-        margin: 5px 30px ;
-        opacity: 40%;
+        .card-title{
+            margin: 40px 60px 10px 40px;
+            text-align: center;
+            font-size: 24px;
+        }
 
-        font-size: 16px;
-        
-        line-height: 1.5;
+        .card-text{
+            text-align: center;
+            margin: 5px 30px ;
+            opacity: 40%;
+            font-size: 16px;
+            line-height: 1.5;
+        }
 
-    }
         .image-container{
             order: 1;
             width: 330px;
             height: 250px;
-            margin-top: 60px;
-           
+            margin-top: 40px;
         }
+
         .color-overlay{
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
             border-bottom-right-radius:0px ;
-            
         }
+
         .card-image{
             width: 330px;
             height: 250px;
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
             border-bottom-right-radius:0px ;
-
-
         }
+
         .card-statistic{
-        
             display: flex;
-            /* background-color: rgb(69, 69, 48); */
             flex-direction: column;
-            /* justify-content: center; */
             align-items: center;
-            /* text-align: center; */
-            /* align-items: center; */
             gap: 30px;
-            /* margin: 20px 50px 40px 50px;
-            padding: 10px; */
+            text-transform: uppercase;
+        }
+
+        .stat-qu{
+            margin-right: 15px;
+        }
+
+        .stat-number{
+            font-size:26px;
+        }
+
+        .stat-text{
+            opacity: 40%;
             text-transform: uppercase;
             
-        }
-        .stat-qu{
-            /* justify-self:center ; */
-            margin-right: 15px;
-            /* text-align: center; */
-
-            /* background-color: gray; */
+            font-size: 12px;
+            margin-top: 3px;
+            margin-right: 50px;
         }
 
-
-    .stat-number{
-        font-size:26px;
-    }
-    .stat-text{
-        opacity: 40%;
-        text-transform: uppercase;
-        
-        font-size: 12px;
-        margin-top: 3px;
-        margin-right: 50px;
-
-    }
-    .attribution { 
-        font-size: 11px; text-align: center; 
-        color: grey;
-        word-spacing: 5px;
-        margin-bottom: 40px;
-    }
+        .attribution { 
+            font-size: 11px; text-align: center; 
+            color: grey;
+            word-spacing: 5px;
+            margin-bottom: 10px;
+        }
 }
